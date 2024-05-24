@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VYL-cw-2yY">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oKA-cK-qZS">
-                                <rect key="frame" x="79.666666666666671" y="381.66666666666669" width="233.66666666666663" height="88.666666666666686"/>
+                                <rect key="frame" x="79.666666666666671" y="327.33333333333331" width="233.66666666666663" height="197.33333333333331"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNL-NW-Xru">
                                         <rect key="frame" x="0.0" y="0.0" width="233.66666666666666" height="34.333333333333336"/>
@@ -28,11 +28,27 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mg-Cj-Nol">
-                                        <rect key="frame" x="0.0" y="54.333333333333314" width="233.66666666666666" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="54.333333333333371" width="233.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Language Changed Tapped"/>
                                         <connections>
                                             <action selector="localChangeTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="JwF-hc-6Wa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-3h-nsX">
+                                        <rect key="frame" x="0.0" y="108.66666666666669" width="233.66666666666666" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="NotifyObserver Tapped"/>
+                                        <connections>
+                                            <action selector="notifyObserversTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="SeT-5i-jio"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KII-Zc-7RK">
+                                        <rect key="frame" x="0.0" y="163" width="233.66666666666666" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Next Tapped"/>
+                                        <connections>
+                                            <action selector="nextTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="MV6-7u-Zgq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -45,10 +61,58 @@
                             <constraint firstItem="oKA-cK-qZS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RCf-oo-R70"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xvO-QC-HCk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="4"/>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="Ryr-Eb-HwY">
+            <objects>
+                <viewController storyboardIdentifier="NextViewController" id="gnJ-Nz-rFT" customClass="NextViewController" customModule="SNotificationCenter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7f7-KG-ncl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w48-eo-dTK">
+                                <rect key="frame" x="98.666666666666671" y="408.66666666666669" width="195.66666666666663" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Notify Oserver Tapped"/>
+                                <connections>
+                                    <action selector="notifyObserversTapped" destination="gnJ-Nz-rFT" eventType="touchUpInside" id="9yf-sS-NYL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d7p-cb-Bbi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w48-eo-dTK" firstAttribute="centerY" secondItem="7f7-KG-ncl" secondAttribute="centerY" id="Cm8-FS-Btp"/>
+                            <constraint firstItem="w48-eo-dTK" firstAttribute="centerX" secondItem="7f7-KG-ncl" secondAttribute="centerX" id="Kts-TF-y5H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ULT-Bf-9u6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1796" y="-18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dDm-eN-r0W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VYL-cw-2yY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OIA-D1-AwF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zPz-7L-ABq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0an-A7-gcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>

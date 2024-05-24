@@ -14,6 +14,8 @@
 		BFF7CF3E2C0086A500F37AA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF7CF3D2C0086A500F37AA8 /* Assets.xcassets */; };
 		BFF7CF412C0086A500F37AA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF7CF3F2C0086A500F37AA8 /* LaunchScreen.storyboard */; };
 		BFF7CF4A2C00870000F37AA8 /* SNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CF492C00870000F37AA8 /* SNotificationManager.swift */; };
+		BFF7CF4C2C00945E00F37AA8 /* SObserverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CF4B2C00945E00F37AA8 /* SObserverManager.swift */; };
+		BFF7CF502C0097C900F37AA8 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF7CF4F2C0097C900F37AA8 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BFF7CF402C0086A500F37AA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFF7CF422C0086A500F37AA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFF7CF492C00870000F37AA8 /* SNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNotificationManager.swift; sourceTree = "<group>"; };
+		BFF7CF4B2C00945E00F37AA8 /* SObserverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SObserverManager.swift; sourceTree = "<group>"; };
+		BFF7CF4F2C0097C900F37AA8 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				BFF7CF342C0086A400F37AA8 /* AppDelegate.swift */,
 				BFF7CF362C0086A400F37AA8 /* SceneDelegate.swift */,
 				BFF7CF382C0086A400F37AA8 /* ViewController.swift */,
+				BFF7CF4F2C0097C900F37AA8 /* NextViewController.swift */,
 				BFF7CF3A2C0086A400F37AA8 /* Main.storyboard */,
 				BFF7CF3D2C0086A500F37AA8 /* Assets.xcassets */,
 				BFF7CF3F2C0086A500F37AA8 /* LaunchScreen.storyboard */,
@@ -74,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				BFF7CF492C00870000F37AA8 /* SNotificationManager.swift */,
+				BFF7CF4B2C00945E00F37AA8 /* SObserverManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -150,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF7CF392C0086A400F37AA8 /* ViewController.swift in Sources */,
+				BFF7CF502C0097C900F37AA8 /* NextViewController.swift in Sources */,
 				BFF7CF352C0086A400F37AA8 /* AppDelegate.swift in Sources */,
 				BFF7CF4A2C00870000F37AA8 /* SNotificationManager.swift in Sources */,
+				BFF7CF4C2C00945E00F37AA8 /* SObserverManager.swift in Sources */,
 				BFF7CF372C0086A400F37AA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
