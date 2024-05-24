@@ -1,5 +1,5 @@
 # SNotificationCenter
-Project provides basic idea and approach to implement the NotificationCenter by using Pubs/Subs Pattern.
+Project provides basic idea and approach to implement the NotificationCenter by using Pubs/Subs Pattern, and Observer design pattern
 
 # HOW TO Use
 * Drag and drop the file **SNotificationManager** in your project
